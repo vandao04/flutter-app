@@ -1,0 +1,35 @@
+name: mvp_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  dio: ^5.9.0
+  connectivity_plus: ^6.1.5
+  pretty_dio_logger: ^1.4.0
+  retrofit: ^4.7.2
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.1.0
+  dartz: ^0.10.1
+  shared_preferences: ^2.2.2
+  timeago: ^3.3.0
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.7.0
+  retrofit_generator: ^10.0.2
+  json_serializable: ^6.7.1
+  freezed: ^3.2.0
+
+flutter:
+  uses-material-design: true

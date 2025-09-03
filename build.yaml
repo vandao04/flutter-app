@@ -1,0 +1,21 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          include_if_null: false
+          explicit_to_json: true
+          field_rename: snake
+      freezed:
+        options:
+          copy_with: true
+          map_equals: true
+          when: true
+          to_string: true
+          union_key: type
+          union_value_case: snake
+      retrofit_generator:
+        options:
+          type_override:
+            - type: "dart:io.File"
+              override: "dart:typed_data.Uint8List"
